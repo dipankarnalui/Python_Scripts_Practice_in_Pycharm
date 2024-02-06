@@ -1,5 +1,0 @@
-hello world
-this is another hello world
-hi there hello
-this is not
-another line
