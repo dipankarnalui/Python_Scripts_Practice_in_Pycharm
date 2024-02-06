@@ -1,0 +1,5 @@
+INFO:root:list index out of range
+Traceback (most recent call last):
+  File "C:\Users\dnalui\Python_Project\Python_Scripts_Practice\python_Core_Training\Day3\22.py", line 8, in <module>
+    print("ARR = ", arr[index])
+IndexError: list index out of range
