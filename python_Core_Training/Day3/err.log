@@ -1,0 +1,10 @@
+DEBUG:root:error-1
+INFO:root:error-2
+WARNING:root:error-3
+ERROR:root:error-4
+CRITICAL:root:error-5
+error-1 2023-12-07 15:50:32,637
+error-2 2023-12-07 15:50:32,637
+error-3 2023-12-07 15:50:32,637
+error-4 2023-12-07 15:50:32,638
+error-5 2023-12-07 15:50:32,638

@@ -1,0 +1,3 @@
+INFO,"Application started"
+WARN,"Low Memory"
+ERROR,"Application 1 failed"
