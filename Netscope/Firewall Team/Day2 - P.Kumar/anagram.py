@@ -7,8 +7,6 @@ s5='dusty' #anagram
 s6='car'
 s7='roc'
 def check_anagram(s1,s2):
-    flag1=False
-    flag2=False
     if len(s1) == len(s2):
         for e in s2:
             if e not in s1:
