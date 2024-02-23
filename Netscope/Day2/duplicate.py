@@ -1,3 +1,4 @@
+#duplicate
 l1=[1,4,5,8,6,1,3,8,1,5,8]
 d1={}
 for i in range(0,len(l1)):

@@ -14,7 +14,6 @@ print("l4 = ",l4)
 
 l3.sort()
 print("l3 = ",l3)
-
 d2={}
 for e in l3:
     for i in range(len(l4)):

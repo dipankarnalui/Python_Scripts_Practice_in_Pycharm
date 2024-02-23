@@ -1,4 +1,4 @@
-#Anagram strings
+#Checking Anagram strings
 s1='cat'
 s2='act' #anagram
 s3='actt' #not anagram

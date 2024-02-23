@@ -1,3 +1,4 @@
+#day1-Srinivasan
 '''
 [pcA]——[switchA]——---------[Router]——[switchB]——[pcB]
 1.1.1.1/24     1.1.1.2/24            2.2.2.2/24.       2.2.2.1/24

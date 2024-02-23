@@ -1,3 +1,4 @@
+#string operations without using list
 x = "AAABBCCAADDV"
 out = "A5B2C2D2V1"
 s1=''
