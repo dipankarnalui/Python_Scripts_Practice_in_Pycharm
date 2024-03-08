@@ -7,3 +7,4 @@ for e in x:
     if store not in s1:
         s1 = s1 + store
 print(s1)
+
