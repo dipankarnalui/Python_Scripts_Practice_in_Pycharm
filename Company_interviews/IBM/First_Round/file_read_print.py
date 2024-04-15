@@ -3,6 +3,7 @@ d1={}
 with open("simple.txt", "r") as f:
     #all_lines=f.readlines()
     all_lines = f.read().splitlines() #to remove /n
+    print(type(all_lines))
     for line in all_lines:
         if line.startswith("IP"):
             k=line.split("=")[0]
