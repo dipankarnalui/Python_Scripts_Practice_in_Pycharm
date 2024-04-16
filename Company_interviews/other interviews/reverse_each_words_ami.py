@@ -4,8 +4,10 @@ s = "the sky is blue"
 #output = "eht yks si eulb"
 
 l1=s.split()
-#print(l1)
+print(l1)
 output=""
 for e in l1:
+    #print(e)
     output= output + " " + e[::-1]
-print(output)    
+    print(output)
+print(output)
