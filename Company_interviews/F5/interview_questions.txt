@@ -1,0 +1,32 @@
+Band Utilization, Slow internet connectivity issues,
+Ping to check if packet loss, rechability
+OTA capture, packet capture, analysis
+Prob request/response
+Association Request
+Beacon packet
+DHCP packets, NAK, IP Assignment
+Trobleshooting Modem/Gateway, internet
+DHCP server issue in the modem
+DHCP CLI commands, SSH, DHCP process, ps, grep, not running, dibbler logs,
+interface not up,
+DHCP configuration files checking
+Networking commands, not rechable, not rechable, traceroute, iptable, ipv4 working
+Linux commands, netstat -a, port listening, nmap
+iptable,
+linux command background process
+grep, awk,
+networking route command
+sudo route add default gw 169.254.0.0
+arp command
+subnet mask and CIDR
+OSI Layer
+Load Balancer - L4
+Docker, Kubernets
+IAM,
+UI Testing
+
+
+
+
+
+
