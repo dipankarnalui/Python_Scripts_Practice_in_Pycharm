@@ -1,8 +1,8 @@
 #Find anagram
 
 str1="abc"
-str2="bacd"
-#str2="bac"
+#str2="bacd"
+str2="bac"
 
 if len(str1) == len(str2):
     for i in range(len(str1)):
