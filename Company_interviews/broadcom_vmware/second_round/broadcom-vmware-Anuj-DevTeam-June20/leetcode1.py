@@ -13,5 +13,4 @@ for i in range(len(nums)):
                 print("i= {} , j= {}, k={}".format(i,j,k))
                 print("nums[i]= {} , nums[j]= {}, nums[k]= {}".format(nums[i],nums[j],nums[k]))
                 print("nums[i] + nums[j] + nums[j] = {}".format(nums[i] + nums[j] + nums[k]))
-
 print(l2)
