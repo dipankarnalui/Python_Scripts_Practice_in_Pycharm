@@ -1,0 +1,10 @@
+#backend testing
+#regression testing
+#API Testing
+#Python and Shell Script
+#Virtualization, Cloud, Open Stack
+#60% Automation, 40% Manual
+#Team Lead - Sravan Kotha1 <srkotha1@in.ibm.com>
+#Job Description =>
+https://krb-sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&partnerid=26059&siteid=5016&Areq=701452BR
+
