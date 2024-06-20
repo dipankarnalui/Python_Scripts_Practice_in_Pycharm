@@ -1,0 +1,8 @@
+virtualization
+telecom apps running on top of the vitulization
+SDN
+hypervisor
+stack
+ESXi
+vcenter
+Data Center Network
