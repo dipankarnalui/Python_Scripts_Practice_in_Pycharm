@@ -1,0 +1,8 @@
+RP/0/RP0/CPU0:R1#sh isis neighbors
+Wed Jul 17 06:52:07.664 UTC
+
+IS-IS 10 neighbors:
+SystemId    Interface       SNPA       State       Holdtime      Type      IETF-NSF
+R2    Gi0/0/0/4.10    *PtoP*      Up          25             L2       Capable
+
+Total neighbor count: 1
