@@ -6,11 +6,11 @@ Webex Video: Dipankar Nalui to be interviewed by Senthilnathan C ,
 LOCATION: Bangalore, India
 ALTERNATE LOCATION Chennai, India
 AREA OF INTEREST Engineer - Software
-HIRING MANAGER Fadi Wahhab |fwahhab@cisco.com
+HIRING MANAGER Fadi Wahhab
 TECHNOLOGY INTEREST Networking
 JOB TYPE Professional
 JOB GRADE 010
-RECRUITER Sandhya Rao |sandrao2@cisco.com
+RECRUITER Sandhya Rao
 JOB ID 1423945
 REMOTE JOB STATUS Hybrid
 ----------------------
@@ -22,7 +22,7 @@ Senthilnathan C
 
 Recruiters
 ---------------
-Preethika Chittibabu - prchitti@cisco.com
+Preethika Chittibabu
 
 
 What You'll Do
