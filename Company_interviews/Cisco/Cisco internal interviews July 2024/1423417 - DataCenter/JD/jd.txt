@@ -1,0 +1,59 @@
+https://jobs.cisco.com/jobs/ProjectDetail?projectId=1423417&user=1
+Senior Software QA Engineer(Python & Datacenter) - 7 to 10 years - Bangalore
+LOCATION: Bangalore, India
+AREA OF INTEREST: Engineer - Software
+JOB TYPE: Professional
+TECHNOLOGY INTEREST: Service Provider
+JOB ID: 1423417
+
+Interviewer
+-------------
+
+
+Recruiters
+---------------
+Jasna haiibrah@cisco.com
+Rohini Ratna - roratna@cisco.com
+Preethika Chittibabu - prchitti@cisco.com
+
+
+-------------------------------------
+Who you are:
+We are looking for a Software Engineer to work on Cisco Intersight Platform and Services. Successful candidate will work in a very sophisticated development environment and will get plenty of opportunities to gain technical expertise in a number of areas. You will be part of an expert team working on next generation Data Center products. You should have a good sense of product design, and be willing to work in small, self-organizing teams. If you are looking to excel in a fast-paced environment creating cutting edge network management solutions and want to make a significant long lasting impact, this job's for you!
+
+Required Skills/Experience:
+----------------------
+B.E./M.Tech. with 8+ years of experience.
+Experience in Functional, Integration and System testing of enterprise products and solutions.
+Experience in Data Center related technologies like Servers, Storage, Networking and Virtualization.
+Experience in SaaS Enterprise Software or Cloud Infrastructure with exposure to Microservices architecture.
+Strong background and experience in software Testing methodologies, Test development and Test execution.
+System software experience in a Linux platform environment, VMWare environment.
+Strong Python Programming Skills, with Strong design skill using object-oriented methodologies.
+Experience in Selenium Webdriver.
+Good understanding of SDLC.
+Strong analytical and debugging skills.
+
+
+
+Helpful Skills/Experience:
+------------------------
+Good understanding of Cloud Operations.
+Good experience of working in Agile or CICD environment.
+Familiarity with setting up CICD Pipeline, AWS, GIT, Selenium WebDriver, Ansible, Docker and Kubernetes.
+Experience in setup and configuration of datacenter hardware such as Rack Server, Blade Server, Chassis, Adaptors, Ethernet switch such as Cisco Nexus 9k, and FC switch. Knowledgeable in Troubleshooting issues in the environment.
+Personal Characteristics:
+Excellent communication skills and a proven ability to manage competing high priority tasks.
+Leadership qualities and a strong team player with the ability to work collaboratively with others.
+Independent, accountable, strong sense of ownership, assertive, communicative, accountable, flexible and adaptable.
+A passion for quality, for doing the right thing for the customers, the product, and for the company.
+
+
+Roles and responsibilities:
+---------------------------
+Contribute to dev-test activities of a Cloud based Management Software, including test scoping, planning, execution, test automation, coordinating with other teams. Identify defects in product, debug and work with developers towards resolution.
+Be part of agile scrum team, attend scrum meetings, provide updates. Prepare and present your work with all stakeholders as part of Sprint Demo.
+Able to take leadership role in drive activities to closure.
+Influence the feature development and Improving product quality and customer experience.
+Automate test plans using python. Use existing Test framework. Use GIT on daily basis.
+Setup UCS infrastructure (FI, Server (Blade and Rack), Install operating system, Configure test environments as needed to validate feature.

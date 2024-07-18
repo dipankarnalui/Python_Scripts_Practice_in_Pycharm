@@ -1,0 +1,26 @@
+Write Subnet
+---------------
+Create 4 Subnets of the following IP
+10.10.1.0/24
+(IPv4 is 32 bits, so first 24 bits are network ID)
+/24 means first 24 bits = 3 octet will be Network ID
+So the last octet will be Host ID
+
+10.10.1 - net ID
+0 - 255 - Hosts possible
+
+256 hosts / 4 subnet = 64 host possible in each subnet
+---------
+
+Slice 64 * 4 = 256
+
+4 subnet = 2^2
+
+So Two more bits will be needed.
+IPv4 is 32 bits, so first 24 bits are network ID,
+here we have to add 2 more bits to create new Network ID
+11111111.11111111.11111111.11000000
+/26 is the answer
+4 subnet = 4 sub group for 4 teams
+--------------------------
+

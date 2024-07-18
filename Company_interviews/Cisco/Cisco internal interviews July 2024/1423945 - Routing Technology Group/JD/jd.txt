@@ -1,0 +1,65 @@
+Webex Video: Dipankar Nalui to be interviewed by Senthilnathan C ,
+1423945: Senior Software Test Engineer - Networking Protocols/Automation/Python
+- 8 to 14 Years - Bangalore
+
+--------------------
+LOCATION: Bangalore, India
+ALTERNATE LOCATION Chennai, India
+AREA OF INTEREST Engineer - Software
+HIRING MANAGER Fadi Wahhab |fwahhab@cisco.com
+TECHNOLOGY INTEREST Networking
+JOB TYPE Professional
+JOB GRADE 010
+RECRUITER Sandhya Rao |sandrao2@cisco.com
+JOB ID 1423945
+REMOTE JOB STATUS Hybrid
+----------------------
+
+
+Interviewer
+-------------
+Senthilnathan C
+
+Recruiters
+---------------
+Preethika Chittibabu - prchitti@cisco.com
+
+
+What You'll Do
+------------
+We have an outstanding opportunity for a Senior Software Engineer that wants to develop their technical skills by solving technical problems for our Service provider customers. You would play a critical role in the team developing and automating solution testing, as well as taking part in integration, performance, and end-to-end test activities for critical solutions.
+
+Responsibilities would include:
+-----------
+Partnering with architects, technical marketing, product management, development teams to define and implement comprehensive test plans.
+Conducting test case and code reviews to validate test scenario accuracy and coverage.
+Modernizing and automating testing to improve overall code quality and automation code base.
+Providing technical expertise and mentorship to the team regarding accurate test methodologies.
+
+Who You'll Work With
+------------------
+The Routing Technology Group (CSG) develops software across the routing, switch and wireless platform portfolio at Cisco and is investing heavily to transform networking through ground breaking solutions that will change the way IT is consumed. This means your work will transform our customers’ consumption of our systems from every angle. Are you opening up the boundaries? Here you will be crafting, implementing and empowering the next generation software stack for Cisco route, switch and wireless portfolio. You will work in a fast-paced agile development team working with cutting edge software and tools to develop exciting solutions with a focus on simplicity. Our team develops Network Software stack for Routing protocols, Manageability protocols and solutions interacting closely with Core OS and works in close collaboration with Platform development teams to enable the Software stack on the existing and future platforms. This team owns the charter on common software for Routing protocols like BGP, OSPF, EVPN, SR, ISIS and Multicast. You will partner with architects, leads, and project managers to implement innovative automated solutions for improving code quality
+
+Who You Are
+------------
+A hardworking, self-motivated, and detailed professional who enjoys digging into complicated problems and exploring technical solutions. Someone who has a clear passion for testing and thrives in bringing transparency to ambiguous situations. A standout colleague capable of influencing within and outside of the team, as well as being an agent for change and transformation. Someone with an ability to take the lead and drive automation while clearly communicating value.
+
+Role & Responsibilities
+---------------
+Work with a team of motivated A-players on the IOS-XR routing feature development team to Tackle complicated problems on platforms that cover a $15B portfolio
+Impact the future of networking by developing innovative groundbreaking systems and software
+Anticipate and work closely with developers and marketing teams at different stages such as PRD, functional spec, design reviews to develop testplans, tools and utilities
+
+
+Minimum Qualifications
+-----------------
+MS EE/CS combined with 6 years of related experience, or BSEE/CS combined with 8+ yrs related experience.
+Good experience in feature level testing and system level understanding of access, edge, core routing platforms and software stacks
+Good understanding of networking fundamentals and protocols and different L2 to L7 technologies.
+Automation experience with Python or equivalent programming language
+Deep technical knowledge in BGP, Segment-routing and EVPN
+Understanding of SP customer deployments
+Vision to lead and solve complex problems
+Familiarity with the SW development cycle and software engineering
+Excellent teamwork and people skills , Self-motivated and highly ambitious
+Familiarity with Linux and modern software tools and techniques for development/debugging

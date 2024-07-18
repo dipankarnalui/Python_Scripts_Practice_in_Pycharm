@@ -5,6 +5,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Choiceplus_Automation" />
+    <orderEntry type="module" module-name="choiceplus_automation_test" />
+    <orderEntry type="module" module-name="Test" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
