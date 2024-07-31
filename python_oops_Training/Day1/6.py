@@ -5,7 +5,7 @@ class Student:
         self.marks=marks
     def find_total(self):
         l1=self.marks.split(",")
-        i1=list(map(int,l1)) #convert str to int in list
+        i1=list(map(int,l1)) #Conversion str to int in list
         self.total=sum(i1)
     def show(self):
         print("Name = ",self.name)

@@ -1,5 +1,5 @@
 #Gigamon Interview
-#write a code to convert a decimal number to binary
+#write a code to Conversion a decimal number to binary
 d=13
 r=d%2
 print(r)

@@ -1,5 +1,5 @@
 l1=["10","20","30","40"]
-marks= [int(e) for e in l1 ] #convert "str of list" to "int of list"
+marks= [int(e) for e in l1 ] #Conversion "str of list" to "int of list"
 print(marks)
 
 #alternative

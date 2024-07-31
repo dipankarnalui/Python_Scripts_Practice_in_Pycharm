@@ -7,6 +7,7 @@
     <orderEntry type="module" module-name="Choiceplus_Automation" />
     <orderEntry type="module" module-name="choiceplus_automation_test" />
     <orderEntry type="module" module-name="Test" />
+    <orderEntry type="module" module-name="Cisco Internal Training" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
