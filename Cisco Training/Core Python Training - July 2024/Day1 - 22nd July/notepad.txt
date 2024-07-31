@@ -1,0 +1,2002 @@
+
+
+Course Agenda:-
+
+===============
+
+day1 - concepts python data structure
+
+day2 - nested data, extended, file-handling, functions
+
+day3 - Modules & packages,classes & exception handling ,
+
+    core utils
+
+day4 - tool builds
+
+
+
+
+
+
+
+1) we need a Python compiler - locally installed
+
+  windows - www.python.org
+
+  linux/mac/unix  - python3 is pre-installed
+
+
+
+2) we need a good IDE    - VS Code / PyCharm
+
+
+
+
+
+3) Online compiler  - www.onlinegdb.com
+
+
+
+
+
+
+
+
+
+===========================================================
+
+Conceptual Learning:-
+
+=====================
+
+
+
+Memory layout of a "C" program :-
+
+===============================
+
+1) Code Area - Source code
+
+2) Data Area - Global vars ( static/compile allocation )
+
+3) Stack Area - Local vars ( static/compile allocation )
+
+4) Heap Area - Global/Local vars ( dynamic/runtime allocations )
+
+
+
+
+
+why Heap Area?
+
+--------------
+
+>> Heap area - Shrink & Expand the memory at the RUN TIME
+
+>> ZERO wastage of memory - utilize to the required extend
+
+
+
+>> Run Time Memory Allocation / Dynamic Memory Allocation
+
+>> python supports only dynamic memory allocations
+
+>> every alloc is DYNAMIC ALLOC
+
+>> python utilizes only HEAP AREA & CODE AREA
+
+>> Python every object is HEAP BASED object
+
+
+
+
+
+
+
+References:-
+
+=============
+
+>> reference is variable which store the address of the data
+
+>> every variable in python is a "Reference Variable"
+
+>> python has the features of a High level lang
+
+
+
+Note:
+
+ Low level lang - pointer are handy
+
+         - pointer need to be de-refered
+
+         - pointer arith
+
+         - direct access to the memory
+
+
+
+ High level lang - references are handy
+
+          - no need to de-refer
+
+          - will not have direct access to the memory
+
+
+
+
+
+
+
+Book Keeper:- ( NameSpace )
+
+============================
+
+>> active list of var/fns/class/module loaded
+
+>> within python default namespace name is "__main__"
+
+>> special variable which holds namespace name print(__name__)
+
+>> display the contents of the book keeper
+
+   - dir()
+
+   - globals()
+
+   - locals()  - within a function
+
+>> once a variable is assigned a value - name is registered
+
+  once a variable goes out of scope  - name is de-registered
+
+
+
+Note:
+
+ NameError
+
+
+
+
+
+Variable naming convention :-
+
+==============================
+
+>> Python Community coding standards - pep8 & pep257
+
+>> www.pep8.org
+
+>> avoid using variable names - alphabet - "l"
+
+                - alphabet - "O" & o
+
+
+
+>> inbuilt   - name starts & ends with underscore (DUNDER)
+
+>> user defined - other than inbuilt
+
+
+
+  __variablename__  = inbuilt variable
+
+  _variablename_   = inbuilt variable
+
+
+
+  __variablename   = user defined ( within class development )
+
+  _variablename   = user defined ( within class development )
+
+  variablename    = user defined - we use in the normal program
+
+
+
+Note:
+
+ -never interfer with inbuilt variable names
+
+ -never define user defined variable in a inbuilt-way
+
+
+
+=================================================================
+
+Python Interpreter - is purely object oriented
+
+          - it treats each datatype as a CLASS
+
+
+
+"int"  in python is a class/variable ? - class
+
+"float"
+
+"str"
+
+
+
+
+
+
+
+
+
+Object in Memory:- (Memory Foot prints of the object)
+
+===================
+
+>> every python object
+
+  1) Data field
+
+  2) Data type field
+
+  3) Reference count field
+
+  4) ID - hash code generated python object system
+
+
+
+import sys
+
+
+
+num = 10
+
+print("Value   = ",num)          #- 10
+
+print("Data Type = ",type(num))       #- class int
+
+print("Ref count = ",sys.getrefcount(num))  #- actual + 1
+
+print("Unique ID = ",id(num))        #- 69762504
+
+
+
+
+
+Note:
+
+ -Python doesn't return Physical Address
+
+ -it returns masked address
+
+
+
+
+
+
+
+================================================================
+
+key take away :- ( python Jargons )
+
+===================================
+
+1) Heap Area
+
+2) Reference variable
+
+3) Book keeper / namespace
+
+4) user defined variable and dunder variables
+
+5) Objects in the memory - type(num) & print(num)
+
+
+
+6) Shallow copy
+
+7) GC
+
+
+
+
+
+==================================================================
+
+
+
+Shallow copy:-
+
+===============
+
+ >> Shallow copy  - copies the address
+
+          - object sharing
+
+          - re-use the existing RESOURCE
+
+          - memory efficient
+
+          - increments the reference count by 1
+
+          - there is synchronization b/w variables
+
+
+
+ >> Deep copy   - allocates new memory & copies the VALUE
+
+          - re-creates NEW RESOURCE
+
+          - memory hog
+
+          - only for certain datastructures
+
+          - there is no synch b/w variables
+
+
+
+Ex1:-
+
+======
+
+num = 10
+
+temp = num # shallow copy
+
+      # it copies reference of 10
+
+      # temp and num are holding same reference
+
+
+
+print(id(num))  # 65524
+
+print(id(temp))  # 65524
+
+
+
+print(num)    # 10
+
+print(temp)   # 10
+
+
+
+print(num is temp) # True
+
+
+
+Note:
+
+ when is reference count incremented ?
+
+  - shallow copy
+
+ when is reference count decremented ?
+
+  - variable goes out of the scope
+
+  - variable ovewritten new value
+
+
+
+
+
+
+
+-------------------------------------------------------------------------
+
+Story:-
+
+=======
+
+
+
+Assumptions:-
+
+-------------
+
+Mr. Harish is running a CAFE
+
+this cafe doesn't have cleaning staff
+
+capacity - 20 seater
+
+
+
+what happened ?
+
+---------------
+
+10.30 - 15 customers walk-in
+
+     they will place the order
+
+     they had food
+
+     spilled food around the table
+
+     they left by 12.00
+
+
+
+12.30 - 10 new customers walk-in
+
+     can they occupy the space ?
+
+
+
+
+
+
+
+
+
+
+
+Problem:-
+
+----------
+
+ we have free space - but could not utilize
+
+ since nobody is there to clean the un-cleaned area
+
+
+
+
+
+Solution:-
+
+----------
+
+ we need to appoint a cleaning staff
+
+
+
+
+
+Similarily:-
+
+============
+
+
+
+Cafe    - Process Memory - Heap Area
+
+walk in   - programmer allocates memory
+
+walk out  - programmer forgets to de-allocate the memory
+
+problem   - we have a FREE MEM SPACE, could not utilize
+
+       [ Memory Leakage ]
+
+
+
+
+
+
+
+Solution  - Garbage Collector - memory cleaning program
+
+                - cleanup un-used memory
+
+                - automatic process
+
+
+
+
+
+Garbage Collector (GC):-
+
+=========================
+
+>> memory house keeper - re-claim un-used memory in the HEAP area
+
+>> lazy process - running the background
+
+>> if the ref count == 0
+
+    reclaim the memory
+
+  else:
+
+    do nothing - ignore
+
+>> since python has GC chances of "MEMORY LEAKAGE" is ZERO
+
+
+
+>> import gc   # performance tunning
+
+  gc.collect()
+
+
+
+>> if the users memory usage - exceeds the threshold
+
+    it will automatically call the GC
+
+
+
+
+
+Key take away of this learning :-
+
+=================================
+
+What is Heap Area ?
+
+What is Dynamic Memory Allocations ?
+
+what are references ?
+
+what is a Name-space?
+
+Object in Memory
+
+what is shallow copy ?
+
+what is GC ?
+
+
+
+
+
+python jargons - shallow copy
+
+        - deep copy
+
+        - references
+
+        - namespace - __main__
+
+        - gc
+
+        - object id
+
+        - reference count
+
+
+
+
+
+=================================================================
+
+
+
+within Programming Lang - Data Types
+
+within Scripiting Lang - Data Structures
+
+
+
+
+
+Data Structures:-
+
+=================
+
+>> python data structure are class-based
+
+>> Python data structures are classified into 2 types
+
+  Im-Mutable (Constant/Read-only) - we cannot shrink/expand
+
+  Mutable  (Variable/Read-write) - we can shrink/expand
+
+
+
+
+
+          Data Structure
+
+             |
+
+       --------------------------
+
+       |             |
+
+     Im-Mutable        Mutable
+
+     (Read-only)        (Read-Write)
+
+
+
+     int,float         bytearray
+
+     byte           list
+
+     str            set
+
+     bool           dict
+
+     NoneType
+
+     tuple
+
+
+
+
+
+Visually Identify the Python Data Structures :-
+
+------------------------------------------------
+
+ age=21
+
+ ht=5.5
+
+ name="manava"  # unicode string
+
+ name=b"manava" # byte string
+
+ flag=True
+
+ result=None
+
+
+
+weeks=("sun","mon","tue","wed")     # tuple - round braces
+
+numlst=[10,20,30,40,50]         # list - square braces
+
+grps={"alpha","beta","delta","omega"}  # set  - curly braces
+
+ctab={
+
+   "red" : 10,           # dict - curly braces
+
+   "blue" : 20,                key-value pairs
+
+   "green": 30
+
+   }
+
+
+
+======================================================================
+
+
+
+Tightly binded:-
+
+----------------
+
+>> Static binding  - binding happens once in a LIFE TIME
+
+>> declarative langs
+
+
+
+"C" code snippet:
+
+
+
+int main()
+
+{
+
+ int num;   // var "num" is tightly binded to datatype "int"
+
+        // there is no support for "REBINDING"
+
+        // variable type cannot be changed later
+
+
+
+ num = 10;   // valid or invalid ?
+
+
+
+ num = "karthik" // valid or invalid ?
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+Loosely binded:-
+
+----------------
+
+>> Dynamically typed lang - rebinding can happen any no of times
+
+>> major scripting lang
+
+>> Non-declarative lang
+
+
+
+num = 10    # var "num" is binded with data-type "int"
+
+
+
+num = "manav" # var "num" is re-binded with data-type "str"
+
+
+
+num = 5.5   # var "num" is re-binded with data-type "float"
+
+
+
+
+
+pros :-  re-use same variable name multiple times
+
+     lesser load onto the namespace
+
+
+
+cons :-  shadowing
+
+     accidentally user starts using
+
+     inbuilt fn-name/class-name as user defined-vars
+
+
+
+
+
+
+
+Guess:-
+
+=======
+
+str = "hello world of unix"
+
+
+
+num1 = 10
+
+num2 = 20
+
+res = num1 + num2
+
+print(res)
+
+
+
+
+
+
+
+
+
+Guess :-
+
+========
+
+str = "hello world of unix"
+
+
+
+num1 = 10
+
+num2 = 20
+
+res = num1 + num2
+
+print(res)
+
+
+
+num3 = "kishore"
+
+res = num1 + num3
+
+print(res)    # what is the output of this statement ?
+
+
+
+
+
+
+
+Guess :-
+
+========
+
+str = "hello world of unix"
+
+
+
+num1 = 10
+
+num2 = 20
+
+res = num1 + num2
+
+print(res)
+
+
+
+num3 = "kishore"
+
+res = str(num1) + num3
+
+print(res)    # what is the output of this statement ?
+
+
+
+
+
+A) 10kishore
+
+B) 10
+
+C) kishore
+
+D) Error -
+
+
+
+
+
+
+
+
+
+Note:
+
+ shadowing can be easily detected STATIC COMPILERS
+
+  ex: pylint tool
+
+
+
+
+
+===================================================================
+
+Top websites for python developers:-
+
+=====================================
+
+
+
+1) Python compiler -  www.python.org - win/mac
+
+          -  activestate.com - linux/unix
+
+          -  anaconda.com  - data sci community
+
+
+
+2) Online docs   -  www.docs.python.org/3
+
+
+
+3) Coding standards -  www.pep8.org
+
+
+
+4) Python REPO   -  www.pypi.org
+
+
+
+5) Pycharm-IDE   -  www.jetbrains.com (community edition)
+
+
+
+6) VS Code-IDE   -  https://code.visualstudio.com/download
+
+
+
+Note:
+
+ python 3.8 & above
+
+ latest version is 3.12
+
+
+
+
+
+Why pycharm ?
+
+=============
+
+1) project based
+
+2) by default virtual env is created
+
+3) intelli-sense
+
+4) integrated help system
+
+5) integrated debugger ( GUI)
+
+6) Static compiler (pylint)
+
+7) suggestions
+
+8) variable colour coding
+
+9) integrated lib mgmt
+
+10) integrate CI/CD
+
+11) integrated package mgmt
+
+
+
+============================================================
+
+Python was on white paper
+
+
+
+Diff python implementations:-
+
+=============================
+
+1) written "C"   - Cpython ( vanilla distros )
+
+2) written "java"  - Jython
+
+3) written "C#"   - IronPython
+
+4)        - Rpython
+
+5)        - purepython - can match speed of "c"
+
+6)        - micropython
+
+7)        - circuitpython
+
+8)        - numba
+
+
+
+To display the python DISTROs:-
+
+================================
+
+import sys
+
+
+
+print(sys.implementation)
+
+print(sys.version)
+
+print(sys.executable)
+
+
+
+
+
+Note:-
+
+-------
+
+we are using Cpython implementation
+
+
+
+
+
+          Cpython
+
+            |
+
+        -----------------
+
+       |         |
+
+       2.x        3.x
+
+
+
+       2.2        3.8
+
+       2.4        3.9
+
+       2.6        3.10
+
+       2.7        3.11
+
+                3.12 (latest version)
+
+
+
+
+
+>> Stopped active development of python 2.x Vertical
+
+  as on 31/dec/2019 - End Of Life
+
+
+
+>> Only python 3.x is under active development
+
+
+
+>> programs written python 2.x may/not work on 3.x
+
+
+
+>> tool 2to3.py   - convert 2.x program to 3.x syntax
+
+     lib2to3.py - convert py2 lib to py3 syntax
+
+
+
+
+
+=============================================================
+
+Basic input statement:-
+
+=======================
+
+>> inbuilt function named - "input()"
+
+>> accepts data from the keyboard  - stdin
+
+>> it always SCANS THE DATA AS A "String"
+
+
+
+ex:-
+
+----
+
+name = input("Enter u r name : ")
+
+age = input("Enter u r age : ")
+
+
+
+Basic output statement:-
+
+========================
+
+>> inbuilt function named - "print()"
+
+>> prints the data onto the console  - stdout
+
+
+
+ex:-
+
+----
+
+num1=10
+
+num2=20
+
+res=num1 + num2
+
+
+
+print(res)
+
+print("Result is ",res)     # prefered way
+
+print("Result is "+str(res))
+
+print("Result is "+repr(res))
+
+
+
+#Place Holders
+
+#---------------
+
+print("sum of %s and %s is %s" %(num1,num2,res))
+
+print("sum of {0} and {1} is {2}".format(num1,num2,res))
+
+print(f"sum of {num1} and {num2} is {res}")
+
+
+
+
+
+
+
+Structure of a python program:-
+
+===============================
+
+>> file extension should ".py" (optional)
+
+
+
+
+
+first.py:-
+
+===========
+
+import os   # all the import statements / loading library
+
+       # should be at the start
+
+
+
+def greet(): # define all the functions or classes
+
+  print("Hello everybody!")
+
+
+
+
+
+# whatever we type here is considered as main program
+
+# left aligned
+
+greet()
+
+print("OS name = ",os.name)
+
+print("PID   = ",os.getpid())
+
+num1 = input("Enter first : ")
+
+num2 = input("Enter second : ")
+
+res = num1 + num2
+
+print("Result",res)
+
+
+
+
+
+Note:
+
+ >> case sensitive lang
+
+ >> white space sensitive lang / Indentation sensitive lang
+
+
+
+
+
+How to write/run a python program on CLI - mac/unix/linux:-
+
+----------------------------------------------------------
+
+$ vim sample.py
+
+
+
+$ python3 sample.py
+
+
+
+
+
+How to run a python program on IDE:-
+
+------------------------------------
+
+1) create new file with extension as ".py"
+
+2) type the program
+
+3) run the program & clear all the errors
+
+
+
+
+
+
+
+
+
+
+
+second.py:-
+
+------------
+
+import os   # all the import statements
+
+
+
+print("OS name = ",os.name)    # NT  - for windows
+
+                 # POSIX - for unix/liunx/mac
+
+print("PID   = ",os.getpid())
+
+num1 = input("Enter first : ")
+
+num2 = input("Enter second : ")
+
+res = int(num1) + int(num2)
+
+print("Result",res)
+
+
+
+
+
+============================================================
+
+key take away:-
+
+================
+
+>> top websites
+
+>> python implementations
+
+>> IDE features
+
+>> input statement
+
+>> output statement
+
+>> structure of a python program
+
+>> How run using CLI/IDE
+
+
+
+
+
+Task:-
+
+======
+
+Enter u r first name - ravi
+
+Enter u r mid name  - shankar
+
+Enter u r last name - prasad
+
+
+
+Expected Output:-
+
+-----------------
+
+RAVI SHANKAR PRASAD
+
+ravi-shankar-prasad
+
+ravi,shankar,prasad
+
+
+
+Duration : 10 mins
+
+Time   : 12.32 to 12.42
+
+Hint   : name = name.upper()
+
+
+
+Once completed - paste the solution on the chat
+
+        - privately to "vijay"
+
+
+
+
+
+solution:-
+
+----------
+
+first_name = input("Enter u r first name : ")
+
+mid_name  = input("Enter u r mid name  : ")
+
+last_name = input("Enter u r last name : ")
+
+
+
+res1="%s %s %s" %(first_name,mid_name,last_name)
+
+res2="%s-%s-%s" %(first_name,mid_name,last_name)
+
+res3="%s,%s,%s" %(first_name,mid_name,last_name)
+
+
+
+print("RES1 =",res1.upper())
+
+print("RES2 =",res2)
+
+print("RES3 =",res3)
+
+
+
+
+
+
+
+Task2:-
+
+========
+
+name="hari"
+
+wt=50
+
+ht=5.5
+
+
+
+
+
+Expected output:-
+
+------------------
+
+name = hari wt = 50  ht = 5.5
+
+ht = 5.5  name = hari wt = 50
+
+
+
+Duration : 5 mins
+
+Time   :
+
+
+
+
+
+solution:-
+
+==========
+
+name="hari"
+
+wt=50
+
+ht=5.5
+
+
+
+print("name = %s wt = %s ht = %s" %(name,wt,ht))
+
+print("ht  = %s name= %s wt = %s" %(ht,name,wt))
+
+
+
+=========================================================================
+
+str-class:-
+
+===========
+
+>> Im-Mutable strings
+
+>> default char set - unicode - utf-8
+
+>> inter-nationalization & localization is easy
+
+>> uni-code can represent any manuscript in the world
+
+  ex: kananda,hindi,tamil,korean,japanese, English
+
+
+
+>> city="bengaluru"    # double quoted - one line string
+
+  city='bengaluru'    # single quoted - one line string
+
+  city='''bengaluru'''  # triple quoted - multi line string
+
+  city=r'bengaluru'    # raw strings - WYSIWG
+
+  city=R'bengaluru'    # raw strings - WYSIWG
+
+
+
+
+
+Note:
+
+>> within \n - new line
+
+     \t - tab
+
+     \b - backspace
+
+>> for ASCII char set we have to use bytes string
+
+>> raw strings used while representing windows file paths
+
+             regular expressions
+
+
+
+
+
+1) define a string  : city="bengaluru"
+
+2) string length   : n=len(city)
+
+3) Indexing      : first element = city[0]
+
+             last element = city[-1]
+
+4) Slicing      : city[start:stop:step] # stop is exclusive
+
+             First 4    = city[:4]
+
+             Except first 4 = city[4:]
+
+             Last 4     = city[-4:]
+
+             Except last 4 = city[:-4]
+
+             Alternate   = city[::2]/city[1::2]
+
+             Reverse    = city[::-1]
+
+
+
+5) search       : if "substr" in city
+
+            res = city.index("substr")
+
+            res = city.count("substr")
+
+6) split       : flst = city.split("DELIMITER")
+
+7) join        : res = "DELIMITER".join(STRLIST)
+
+
+
+
+
+Note:
+
+ python supports negative indexes
+
+
+
+
+
+Slicing examples:-
+
+===================
+
+a = "bengaluru"
+
+
+
+bengal   - city[0:6:1]  -  city[:6]
+
+nga    - city[2:4:1]  -  city[2:4]
+
+ben    - city[0:3:1]  -  city[:3]
+
+aluru   - city[5:9:1]  -  city[5:]
+
+ulag    - city[6: 2:-1] -
+
+eng    - city[1:4:1]  -  city[1:4]
+
+bengaluru - city[0:9:1]  -  city[::]/city[:]
+
+bnauu   - city[0:9:2]  -  city[::2]
+
+eglr    - city[1:9:2]  -  city[1::2]
+
+
+
+
+
+
+
+
+
+
+
+Demo for slicing:-
+
+===================
+
+Given:-
+
+--------
+
+name = "manoj"
+
+
+
+Expected:-
+
+----------
+
+res1 = "Manoj" # convert first letter to upper case
+
+res2 = "manoJ" # convert last letter to upper case
+
+res3 = "ManoJ" # convert first & last letter to uppercase
+
+
+
+
+
+
+
+solution:-
+
+===========
+
+name = input("Enter u r string : ")
+
+
+
+res1 = name[0].upper() + name[1:]
+
+res2 = name[:-1] + name[-1].upper()
+
+res3 = name[0].upper() + name[1:-1] + name[-1].upper()
+
+
+
+print(res1)
+
+print(res2)
+
+print(res3)
+
+
+
+
+
+Task:-
+
+=======
+
+Given:-
+
+--------
+
+name = "arvindhan"
+
+
+
+Expected:-
+
+----------
+
+res1 = "ARvindhAN"  # first 2 & last 2 letters to uppercase
+
+res2 = "ARVI-ndhan" # first 4 to upper & concate a hyphen
+
+res3 = "ARVI-NAHDN" # first 4 & reverse - remaining
+
+
+
+Duration : 10 mins
+
+Time   : 3.09 to 3:19
+
+
+
+
+
+
+
+
+
+Solution:-
+
+===========
+
+name = "arvindhan"
+
+res1 = name[:2].upper() + name[2:-2] + name[-2:].upper()
+
+res2 = name[:4].upper() + "-" + name[4:]
+
+res3 = name[:4].upper() + "-" + name[4:].upper()[::-1]
+
+
+
+print(res1)
+
+print(res2)
+
+print(res3)
+
+
+
+
+
+
+
+
+
+Demo search for substr:-
+
+=========================
+
+>> Special operator "in" - membership operator
+
+
+
+>> if "substr" in city - check if substr exists/does't exists
+
+            - if exists returns True
+
+            - if does't exists returns False
+
+
+
+>> res = city.index("substr") / city.rindex("substr")
+
+    - returns the index position on SUCCESS
+
+    - raises an EXCEPTION on FAILURE
+
+    - index of the first occurance
+
+
+
+>> res = city.count("substr")
+
+    - return no of occurances of substr
+
+
+
+
+
+Ex1:-
+
+------
+
+sent = "today is a working day monday"
+
+
+
+res = "day" in sent  # search for the word "day" in sent
+
+print(res)
+
+
+
+
+
+Ex2:-
+
+------ #     1     2
+
+    #01234567890123456789012345678
+
+sent = "today is a working day monday"
+
+res = sent.index("day")
+
+print(res)
+
+
+
+res = sent.rindex("day")
+
+print(res)  #
+
+
+
+Ex3:-
+
+-----
+
+sent = "today is a working day monday"
+
+res = sent.count("day")
+
+print(res)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Demo split:-
+
+============
+
+>> usually single lettered special char - delimiter
+
+>> UNIVERSAL DELIMITER         - WHITE SPACE
+
+>> usually will be UNIFORM (ideal case)
+
+
+
+
+
+Ex1:-
+
+-----
+
+dob = "15-aug-1947"
+
+
+
+flst = dob.split("-") # SPLIT returns a LIST
+
+
+
+# split first argument is a DELIMITER
+
+# split returns a LIST
+
+
+
+         # flst[0] flst[1] flst[2]
+
+print(flst)    # ["15" , "aug", "1947"]
+
+
+
+print(flst[-1])  # 1947
+
+print(flst[0])  # 15
+
+print(flst[1])  # aug
+
+
+
+print(flst[2][-1]) # 7
+
+print(flst[-2][0]) # a
+
+print(flst[0][0])  # 1
+
+print(flst[-1][-1]) # 7
+
+print(flst[1][:2]) # au
+
+print(flst[2][-2:]) # 47
+
+print(flst[-1][:2]) # 19
+
+print(flst[1][1:-1]) # u
+
+
+
+Demo join:-
+
+===========
+
+>> translates a STRING VECTOR into a SCALAR STRING
+
+>> join works only with string vectors
+
+
+
+alst = ["north","south","east","west"]
+
+res = "-".join(alst)
+
+print(res)  #"north-south-east-west"
+
+
+
+
+
+
+
+
+
+Task:-
+
+------
+
+data = "arun-blr-math,10,sci,20,soc,30"
+
+
+
+Expected:-
+
+----------
+
+Total marks = 60
+
+
+
+Duration : 10 mins
+
+Time   : 4.12 to 4.22
+
+
+
+data = "arun-blr-math,10,sci,20,soc,30"
+
+
+
+flst = data.split(",")
+
+print(flst) # ["arun-blr-math","10","sci","20","soc","30"]
+
+math = int(flst[1])
+
+sci = int(flst[3])
+
+soc = int(flst[5])
+
+total = math + sci + soc
+
+print(total)
+
+
+
+total = 0
+
+for elem in flst:
+
+  if elem.isdigit():
+
+    total = total + int(elem)
+
+
+
+print(total)
+
+
+
+
+
+
+
+solution:-
+
+----------
+
+data = "arun-blr-math,10,sci,20,soc,30"
+
+
+
+flst = data.split("-")
+
+
+
+      #  flst[0] flst[1]  flst[2]
+
+print(flst)# ["arun", "blr", "math,10,sci,20,soc,30"]
+
+
+
+marks = flst[2].split(",")[1::2]
+
+
+
+print(marks)  # ["10","20","30"]
+
+
+
+print(sum(marks)) # error - since it contents are string
+
+
+
+marks[0] = int(marks[0])
+
+marks[1] = int(marks[1])
+
+marks[2] = int(marks[2])
+
+
+
+print(marks)    # [10,20,30]
+
+print(sum(marks)) #
+
+
+
+
+
+
+
+Tricks :-
+
+---------
+
+OUTPUTARRAY=list(map(int,INPUTARRAY))
+
+OR
+
+OUTPUTARRAY=[int(e) for e in INPUTARRAY]
+
+
+
+
+
+solution:-
+
+-----------
+
+data = "arun-blr-math,10,sci,20,soc,30"
+
+
+
+            # 0    1   2
+
+flst = data.split("-") #["arun","blr","math,10,sci,20,soc,30"]
+
+
+
+              #  0   1  2   3  4   5
+
+marks = flst[2].split(",") #["math","10","sci","20","soc","30"]
+
+
+
+final = list(map(int,marks[1::2]))
+
+
+
+print(final)
+
+
+
+print(sum(final))
+
+
+
+
+
+solution:-
+
+==========
+
+final = list(map(int,data.split("-")[-1].split(",")[1::2]))
+
+print(sum(final))
+
+
+
+
+
+Task:-
+
+======
+
+
+
+data = "north-sales-10-20-30-40-50-blr-chn"
+
+
+
+total sales = 150
+
+
+
+
+
+Duration : 10 mins
+
+Time   : 4.40 to 4.50
+
+
+
+Tricks :-
+
+---------
+
+OUTPUTARRAY=list(map(int,INPUTARRAY))
+
+OR
+
+OUTPUTARRAY=[int(e) for e in INPUTARRAY]
+

@@ -1,0 +1,4 @@
+north-del-10
+south-blr-20
+west-mum-30
+east-kol-40

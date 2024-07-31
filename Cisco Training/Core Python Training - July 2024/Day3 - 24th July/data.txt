@@ -1,0 +1,5 @@
+arun=10
+manu=20
+ravi=30
+john=40
+basu=50

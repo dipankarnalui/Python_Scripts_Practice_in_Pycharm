@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$USER_HOME$/Choiceplus_Automation/.idea/Choiceplus_Automation.iml" filepath="$USER_HOME$/Choiceplus_Automation/.idea/Choiceplus_Automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cisco Internal Training/.idea/Cisco Internal Training.iml" filepath="$PROJECT_DIR$/Cisco Internal Training/.idea/Cisco Internal Training.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Python_Scripts_Practice.iml" filepath="$PROJECT_DIR$/.idea/Python_Scripts_Practice.iml" />
       <module fileurl="file://$USER_HOME$/Test/.idea/Test.iml" filepath="$USER_HOME$/Test/.idea/Test.iml" />
       <module fileurl="file://$USER_HOME$/choiceplus_automation_test/.idea/choiceplus_automation_test.iml" filepath="$USER_HOME$/choiceplus_automation_test/.idea/choiceplus_automation_test.iml" />

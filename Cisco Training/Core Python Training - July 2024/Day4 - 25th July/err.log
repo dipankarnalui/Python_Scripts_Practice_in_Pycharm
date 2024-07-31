@@ -1,0 +1,5 @@
+DEBUG:root:error-1
+INFO:root:error-2
+WARNING:root:error-3
+ERROR:root:error-4
+CRITICAL:root:error-5
