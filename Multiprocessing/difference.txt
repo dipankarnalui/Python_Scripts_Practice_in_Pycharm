@@ -1,0 +1,25 @@
+Memory Usage:
+------------
+Multiprocessing uses separate memory for each process.
+Multithreading shares the same memory across threads.
+
+Task Type:
+------------
+Multiprocessing is ideal for CPU-bound tasks (heavy computations).
+Multithreading is better for I/O-bound tasks (waiting for input/output).
+
+Resource Cost:
+------------
+Multiprocessing is more resource-intensive (memory and CPU).
+Multithreading is lighter and uses fewer resources.
+
+Concurrency:
+------------
+Multiprocessing runs tasks in parallel on multiple CPU cores.
+Multithreading runs tasks concurrently within a single CPU core, affected by Python's GIL.
+
+Communication:
+------------
+Multiprocessing requires communication between processes (more overhead).
+Multithreading allows direct communication between threads.
+

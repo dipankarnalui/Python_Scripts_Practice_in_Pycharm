@@ -1,8 +1,5 @@
 #aetest
-#boto3
 #mysql
-#numpy
-#pandas
 #pytest
 #robot
 #selenium
