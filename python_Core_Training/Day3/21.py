@@ -1,13 +1,13 @@
 import logging as log
 
-#change the default log level to DEBUG
-#log.basicConfig(level = log.DEBUG)
+#change the default logging level to DEBUG
+#logging.basicConfig(level = logging.DEBUG)
 
-#change the default log level to DEBUG
-#log.basicConfig(level = log.DEBUG, filename="err.log")
+#change the default logging level to DEBUG
+#logging.basicConfig(level = logging.DEBUG, filename="err.logging")
 
 
-#change the default log level to DEBUG
+#change the default logging level to DEBUG
 log.basicConfig(level=log.DEBUG,filename="err.log",
                format="%(message)s %(asctime)s" )
 

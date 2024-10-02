@@ -1,5 +1,5 @@
 filepath= "file.log"
-filepath2="error_file.log"
+filepath2="error_file.logging"
 with open(filepath,"r") as f:
     all_lines=f.read()
     for line in all_lines.splitlines():

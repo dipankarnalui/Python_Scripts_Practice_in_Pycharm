@@ -1,7 +1,7 @@
 import logging as log
 
-#change the default log level to DEBUG
-#log.basicConfig(level = log.DEBUG) # now default level 10
+#change the default logging level to DEBUG
+#logging.basicConfig(level = logging.DEBUG) # now default level 10
 log.basicConfig(level = log.DEBUG, filename="err.log")
 
 log.debug("error-1") # debug is 10>=30 default level is 30

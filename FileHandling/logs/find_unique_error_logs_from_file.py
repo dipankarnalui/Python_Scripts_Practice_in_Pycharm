@@ -1,4 +1,4 @@
-#Find the strings for ERROR marker from the log files in a directory path
+#Find the strings for ERROR marker from the logging files in a directory path
 #remove duplicate errors
 import glob
 path = "./"

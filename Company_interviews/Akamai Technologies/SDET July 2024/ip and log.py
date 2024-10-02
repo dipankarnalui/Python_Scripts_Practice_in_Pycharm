@@ -1,10 +1,10 @@
 '''
-Suppose you have an access log for a web server in the following format:
+Suppose you have an access logging for a web server in the following format:
 timestamp IP_address file_path
 12345678 10.1.2.3 /var/www/index.html
 12345679 10.1.2.2 /var/www/search.html
 
-#Task: Given this log file and an IP address,
+#Task: Given this logging file and an IP address,
 #please write code to give a list of unique files that IP has accessed.
 '''
 
