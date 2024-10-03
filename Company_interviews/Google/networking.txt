@@ -1,0 +1,10 @@
+#Routing & Switching
+
+PC (ping google.com) ---> Sequence of packets....
+
+1) DNS Request
+2) DNS reply
+3) ICMP Echo request
+4) ICMP Echo reply.
+
+success!!!
