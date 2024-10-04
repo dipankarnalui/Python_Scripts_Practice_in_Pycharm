@@ -1,0 +1,12 @@
+
+When you run a ping command on a fresh machine (one that hasn't cached DNS information), there are 4 key packets involved:
+
+1. DNS Query (Packet 1 - Sent)
+Your machine sends a DNS query to a DNS server to resolve google.com into an IP address (because it’s not cached).
+2. DNS Response (Packet 2 - Received)
+The DNS server replies with the DNS response, providing the IP address of google.com (e.g., 142.250.183.46).
+3. ICMP Echo Request (Packet 3 - Sent)
+After receiving the IP address, your machine sends an ICMP Echo Request (the actual "ping" packet) to Google's server at the resolved IP.
+4. ICMP Echo Reply (Packet 4 - Received)
+Google’s server responds with an ICMP Echo Reply, acknowledging the ping and sending data back to your machine.
+These 4 packets (DNS Query/Response and ICMP Echo Request/Reply) are exchanged during the first ping from a fresh machine.
