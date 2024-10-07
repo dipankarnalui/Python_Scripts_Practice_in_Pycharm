@@ -1,0 +1,44 @@
+
+
+SD-WAN Topology
+—--------------
+
+Overlay (Network Topology)- ST, MT, MT Cluster (Provider) - Shared Tenant
+
+1)	vManage (VM - AWS EC2 instance) - UI - SSH - 3N/6N - Rechability, Certificates, Alert - Opsgenie, S3, json, traffic, ports, protocols, database,logs, AWS running, stopped
+
+2)	vSmart, vBond - Data - SSH
+
+3)	vEdges/cEdges - ( Physical Router ) - Devices, CPU, Mem
+4)	ALB - AWS Load Balancer  - Cluster - MT_cluster_LB
+
+3N - vM1 (primary), vM2(secondary), vM3 - Sync
+
+
+TCP/IP
+—-------
+TCP Session - Validation, Transport, Port
+
+Connection Oriented:
+ 3way-HS CE,
+ Use/Data,
+ 4HS-Terminate
+
+1)	CE
+
+Host A (Client) —-----SYN---------------> Host B (TCP Server)
+Host A (Client) <—-----SYN/ACK--------------- Host B (TCP Server)
+Host A (Client) —-------ACK-------------> Host B (TCP Server)
+
+2)	Transfer Data - wireshark/tcpdump, port, error, SYN, PSH,
+3)	Terminate
+
+Host A (Client) —-----FIN---------------> Host B (TCP Server)
+Host A (Client) <—-----FIN--------------- Host B (TCP Server)
+Host A (Client) <—-------ACK------------- Host B (TCP Server)
+Host A (Client) —-------ACK-------------> Host B (TCP Server)
+
+Firewall rule, Incoming SRC, IP, SRC Port,
+
+
+

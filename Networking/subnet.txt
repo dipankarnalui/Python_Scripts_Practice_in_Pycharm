@@ -1,0 +1,13 @@
+IP Address Structure: An IP address consists of two parts:
+
+#Network ID: Identifies the network segment.
+#Host ID: Identifies individual devices (hosts) within the network.
+
+For example, in an IPv4 address 192.168.1.10/24, the /24 represents the subnet mask, indicating that the first 24 bits are used for the network part, leaving the rest for identifying hosts.
+
+Subnet Mask: A subnet mask defines how many bits are used for the network and how many for the host portion of an IP address. It is expressed in two forms:
+
+Dotted decimal form: e.g., 255.255.255.0
+CIDR notation: e.g., /24 (means the first 24 bits are used for the network)
+
+

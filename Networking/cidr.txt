@@ -1,0 +1,44 @@
+CIDR (Classless Inter-Domain Routing) is a method used for allocating IP addresses and routing IP packets more efficiently. It replaces the old class-based system (Class A, B, C networks) by allowing more flexible division of IP address space.
+
+Key Concepts of CIDR:
+CIDR Notation: CIDR notation is written as IP_address/prefix_length, where:
+
+IP_address is the network address.
+prefix_length (the number after the /) indicates how many bits are used for the network portion of the address.
+The prefix length defines the subnet mask that separates the network and host portions of the address.
+
+Subnet Mask in CIDR: The prefix length /n tells how many bits in the IP address are dedicated to the network part. The rest of the bits are for the host addresses within that network.
+
+For example, in 192.168.1.0/24, the /24 means the first 24 bits are used for the network (equivalent to a subnet mask of 255.255.255.0).
+Example of CIDR:
+Consider the CIDR notation: 192.168.10.0/26
+
+Breaking it Down:
+
+192.168.10.0: This is the network address.
+/26: The prefix length indicates that the first 26 bits of the IP address are the network portion, and the remaining 6 bits are used for hosts.
+Subnet Mask:
+
+/26 is equivalent to the subnet mask 255.255.255.192.
+The first 26 bits of the subnet mask are 1s (11111111.11111111.11111111.11000000), and the last 6 bits are 0s, which are used for hosts.
+Number of Usable Hosts:
+
+In this case, 6 bits are available for hosts, so the number of possible IP addresses is 2^6 = 64. However, 2 IP addresses are reserved (one for the network address and one for the broadcast address), leaving 64 - 2 = 62 usable addresses for hosts in this subnet.
+IP Address Range:
+
+Network address: 192.168.10.0
+First usable host: 192.168.10.1
+Last usable host: 192.168.10.62
+Broadcast address: 192.168.10.63
+Benefits of CIDR:
+Efficient allocation: It allows for more efficient IP address allocation without being restricted by the fixed classes (A, B, C).
+Flexible subnetting: CIDR allows for flexible division of address space based on the actual number of hosts required.
+Improved routing: CIDR allows route aggregation, reducing the number of routes in the routing tables and improving the scalability of the internet.
+Example with Multiple CIDR Blocks:
+Suppose you are given the network 10.0.0.0/16. You can break it into smaller subnets using CIDR:
+
+10.0.0.0/24 (256 addresses, 254 usable)
+10.0.1.0/24 (256 addresses, 254 usable)
+Each block can be used for different departments or services within an organization. This allows better control and management of IP addresses.
+
+In summary, CIDR provides a more flexible and efficient way to allocate IP addresses and manage networks compared to the older class-based system.
