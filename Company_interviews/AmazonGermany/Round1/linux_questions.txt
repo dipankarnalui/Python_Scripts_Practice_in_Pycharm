@@ -1,0 +1,5 @@
+1. What is kernel?
+2. How to test a compression source code ? like zip, tar, 7z 
+3. virtual memory ?
+4. 
+
