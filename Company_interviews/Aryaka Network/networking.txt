@@ -1,0 +1,73 @@
+#Firewall Testing
+#how the communication will happen?  ping to 20.1.1.1 from 10.1.1.1 
+#what are the packets?
+#what is the packet format?
+
+Topology:
+---------
+Host-1 -> L2 switch-1 -> L3 switch (Router) -> L2 switch-2 ->Host-2
+Host-1 : 10.1.1.1/24                                
+Host-2 : 20.1.1.1/24
+
+
+
+
+To understand how the communication will happen between **Host-1** (10.1.1.1/24) and **Host-2** (20.1.1.1/24), we need to break down the process, the type of packets involved, and their format.
+
+### 1. **Communication Process**
+The communication between **Host-1** and **Host-2** will follow the standard routing procedure over the network, using a **ping** command (which relies on **ICMP (Internet Control Message Protocol)**). Here's a step-by-step breakdown of the communication:
+
+- **Host-1 (10.1.1.1)** will initiate a **ping** (ICMP Echo Request) packet destined for **Host-2 (20.1.1.1)**.
+- Since **Host-1** is in the **10.1.1.0/24** subnet and **Host-2** is in the **20.1.1.0/24** subnet, the packet needs to be routed through a **Layer 3 switch (Router)**.
+- The **ICMP Echo Request** will traverse through **L2 Switch-1** to the **L3 switch (Router)**.
+- The **L3 switch** will forward the packet to **L2 Switch-2**, and then to **Host-2** after performing routing lookup to determine the next-hop.
+- **Host-2 (20.1.1.1)** will respond with an **ICMP Echo Reply**, following the reverse path back to **Host-1 (10.1.1.1)**.
+
+### 2. **Packets Involved**
+In this case, the communication involves **ICMP packets**, which are used for diagnostic purposes like testing connectivity between hosts (via ping).
+
+- **ICMP Echo Request:** Sent by **Host-1** to **Host-2** to check if the host is reachable.
+- **ICMP Echo Reply:** Sent by **Host-2** in response to the **Echo Request**, indicating that it received the packet.
+
+### 3. **Packet Format**
+The packets used in this communication will be **ICMP** packets, encapsulated within **IP packets**. The main headers in each packet are:
+
+#### **ICMP Packet Format**:
+- **Type**: Specifies the ICMP message type (e.g., Echo Request = 8, Echo Reply = 0).
+- **Code**: Provides additional information about the message.
+- **Checksum**: Used for error-checking the header and data.
+- **Identifier**: Helps match requests and replies.
+- **Sequence Number**: Helps to order the sequence of packets.
+- **Data**: Includes any additional data that the ping command sends.
+
+#### **IP Packet Format (for ICMP packets)**:
+- **Version**: Specifies the IP version (IPv4 = 4).
+- **Header Length**: Specifies the length of the IP header.
+- **Type of Service**: Describes the quality of the service.
+- **Total Length**: The length of the entire IP packet (header + data).
+- **Identification**: Identifies the fragments of the packet.
+- **Flags**: Contains flags for fragmentation.
+- **Fragment Offset**: Helps in reassembling fragmented packets.
+- **Time to Live (TTL)**: Limits the lifespan of a packet.
+- **Protocol**: Identifies the encapsulated protocol (ICMP = 1 for IPv4).
+- **Header Checksum**: Used to check for errors in the header.
+- **Source IP Address**: IP address of the sender (**Host-1: 10.1.1.1**).
+- **Destination IP Address**: IP address of the receiver (**Host-2: 20.1.1.1**).
+
+### 4. **Flow of the Packet**
+1. **Host-1 sends an ICMP Echo Request**:
+   - Encapsulated in an IP packet with:
+     - Source IP: 10.1.1.1
+     - Destination IP: 20.1.1.1
+     - Protocol: ICMP
+2. The packet goes through **L2 Switch-1** (forwarding at Layer 2).
+3. The packet reaches the **L3 switch (Router)**, which:
+   - Looks at the destination IP (20.1.1.1).
+   - Routes it to **L2 Switch-2**, forwarding it toward **Host-2**.
+4. **Host-2 receives the ICMP Echo Request** and responds with an **ICMP Echo Reply** (encapsulated in an IP packet with reversed source and destination IPs).
+5. The reply follows the reverse path through **L2 Switch-2 → L3 switch → L2 Switch-1 → Host-1**.
+
+### In summary:
+- **Host-1** sends an **ICMP Echo Request** to **Host-2** via a routed path.
+- The communication is encapsulated in **IP packets**, with ICMP inside.
+- **Host-2** replies with an **ICMP Echo Reply**.
