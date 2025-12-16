@@ -1,7 +1,6 @@
 import os
 
-f=os.open("emp.txt",'r')
-data=f.read()
-print(data)
-f.close()
-
+fd = os.open("emp.txt", os.O_RDONLY)
+data = os.read(fd, 1024)   # read 1024 bytes
+print(data.decode())
+os.close(fd)
