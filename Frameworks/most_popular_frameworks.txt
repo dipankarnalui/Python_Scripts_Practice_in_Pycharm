@@ -1,0 +1,12 @@
+Framework       | Who Uses It                            | Short Explanation
+--------------------------------------------------------------------------------
+Django          | Backend Developers                     | Full-stack Python web framework
+Flask           | Backend Developers                     | Lightweight web framework
+FastAPI         | Backend Developers, AI/ML Engineers    | Modern API framework
+Pytest          | QA Automation Engineers, Developers    | Python testing framework
+Robot Framework | QA Automation Engineers                | Keyword-driven automation framework
+Playwright      | QA Automation Engineers                | Modern browser automation framework
+Selenium        | QA Automation Engineers                | Browser automation framework
+TensorFlow      | AI/ML Engineers                        | Deep learning framework
+PyTorch         | AI/ML Engineers                        | AI and neural network framework
+PySpark         | Data Engineers                         | Big data processing framework

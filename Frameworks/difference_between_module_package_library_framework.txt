@@ -1,0 +1,8 @@
++------------+------------------------------------------------------+------------------------------------------------------+
+| Term       | Meaning                                              | Example                                              |
++------------+------------------------------------------------------+------------------------------------------------------+
+| Module     | A single Python file containing code                 | math.py, random.py                                   |
+| Package    | A collection of related modules in a folder          | numpy, pandas                                        |
+| Library    | Reusable collection of packages/modules/functions    | requests, matplotlib, pandas                         |
+| Framework  | A structure that controls application flow           | Django, FastAPI, Robot Framework                     |
++------------+------------------------------------------------------+------------------------------------------------------+

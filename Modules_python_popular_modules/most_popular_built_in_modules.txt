@@ -1,0 +1,24 @@
++------------------+--------------------------------------------------------------+
+| Built-in Module  | Purpose                                                      |
++------------------+--------------------------------------------------------------+
+| os               | Interact with operating system files and folders             |
+| sys              | Access interpreter variables and command-line arguments      |
+| math             | Mathematical functions like sqrt and factorial               |
+| random           | Generate random numbers and selections                       |
+| datetime         | Work with dates, times, and timestamps                       |
+| json             | Read and write JSON data                                     |
+| re               | Regular expressions for pattern matching                     |
+| collections      | Specialized datatypes like Counter and defaultdict           |
+| itertools        | Efficient looping and iterator tools                         |
+| functools        | Higher-order functions and decorators                        |
+| pathlib          | Object-oriented file path handling                           |
+| subprocess       | Run external system commands and processes                   |
+| threading        | Multithreading support                                       |
+| multiprocessing  | Parallel processing using multiple CPU cores                 |
+| logging          | Application logging and debugging                            |
+| csv              | Read and write CSV files                                     |
+| sqlite3          | Built-in SQLite database support                             |
+| unittest         | Built-in testing framework                                   |
+| hashlib          | Hashing functions like SHA256 and MD5                        |
+| argparse         | Parse command-line arguments                                 |
++------------------+--------------------------------------------------------------+1

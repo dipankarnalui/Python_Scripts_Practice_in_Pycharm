@@ -1,0 +1,24 @@
++------------------+--------------------------------------------------------------+
+| External Module  | Purpose                                                      |
++------------------+--------------------------------------------------------------+
+| numpy            | Numerical computing and array operations                     |
+| pandas           | Data analysis and dataframe handling                         |
+| requests         | HTTP requests and API communication                          |
+| boto3            | AWS cloud service automation                                 |
+| scikit-learn     | Machine learning algorithms and utilities                    |
+| beautifulsoup4   | HTML and XML parsing for web scraping                        |
+| matplotlib       | Data visualization and plotting library                      |
+| openpyxl         | Read and write Excel (.xlsx) files                           |
+| pillow           | Image processing and manipulation                            |
+| pygame           | Game development and multimedia applications                 |
+| paramiko         | SSH connections and remote server automation                 |
+| lxml             | Fast XML and HTML parsing                                    |
+| pyautogui        | GUI automation and screen control                            |
+| faker            | Generate fake test data                                      |
+| cryptography     | Encryption and security utilities                            |
+| rich             | Rich text and beautiful terminal output                      |
+| tqdm             | Progress bars for loops and processing                       |
+| pydantic         | Data validation using Python type hints                      |
+| jinja2           | Template engine for generating dynamic text/HTML             |
+| python-dotenv    | Load environment variables from .env files                   |
++------------------+--------------------------------------------------------------+
