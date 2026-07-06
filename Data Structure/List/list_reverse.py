@@ -14,3 +14,4 @@ print(l2)
 l3=l1.copy()
 l3.reverse()
 print(l3)
+
