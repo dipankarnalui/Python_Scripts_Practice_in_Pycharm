@@ -34,7 +34,8 @@ trobleshoot issues between router and the remote server
 NAT
 destination NAT
 Port Address translation
-
+SMB
+NFS
 
 AI
 codex
