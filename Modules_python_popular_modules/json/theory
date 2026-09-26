@@ -1,0 +1,13 @@
+Function	Purpose
+----------------------------
+json.dumps()	Python → JSON string
+json.loads()	JSON string → Python
+json.dump()	    Python → JSON file
+json.load()	    JSON file → Python
+
+Think of S = String:
+------------------
+dumps → dump string
+loads → load string
+dump  → write to file
+load  → read from file

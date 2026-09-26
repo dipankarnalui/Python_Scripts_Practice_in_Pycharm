@@ -1,0 +1,1 @@
+A generator is a function that uses "yield" to produce values lazily, one at a time, allowing efficient memory usage.
