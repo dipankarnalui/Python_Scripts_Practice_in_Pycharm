@@ -6,5 +6,5 @@ class Circle:
         return 3.14 * self.radius * self.radius
 
 c=Circle(5)
-print(c.area())
+print(c.area)  #we can call the method like a variable
 
